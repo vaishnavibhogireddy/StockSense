@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #3b82f6;
+  --color-primary-dark: #2563eb;
+  --color-secondary: #f43f5e;
+  --color-bg-dark: #111827;
+  --color-bg-sidebar: #1f2937;
+  --color-bg-light: #f3f4f6;
+  --color-card: #ffffff;
+  --color-border: #e5e7eb;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: var(--color-bg-light);
+  color: #1f2937;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-sm border border-gray-200 p-4 hover:shadow-md transition-shadow;
+}
